@@ -12,22 +12,5 @@
 	
 	<context:component-scan base-package="br.com.caiopaulucci"/>
 	
-	<!-- bean definitions here -->
-
-	<si:channel id="channel">
-		<si:queue capacity="10" />
-	</si:channel>
-	
-	<si:channel id="input">
-	</si:channel>
-	
-	<si:channel id="output">
-		<si:queue capacity="10"/>
-	</si:channel>
-	
-	<si:service-activator input-channel="input"
-                      output-channel="output"
-                      ref="gritador"
-                      method="shout"/>
 	
 </beans>

@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: TesteCaio
+
+server:
+  port: 0
+logging:
+  level: WARNING
